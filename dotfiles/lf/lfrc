@@ -1,0 +1,35 @@
+set ratios 1:2:3
+set icons true
+
+set preview
+# Set cptv as  previewer
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+set sixel true
+
+# set internal field separator (IFS) to "\n" for shell commands
+# This is useful to automatically split file names in $fs and $fx properly
+# since default file separator used in these variables (i.e. 'filesep' option)
+# is newline. You need to consider the values of these options and create your
+# commands accordingly.
+set ifs "\n"
+
+cmd cb ${{
+  cb copy $f >/dev/null 2>/dev/null
+}}
+
+map a cb
+
+set statfmt "  \033[29m  %S   |   \033[32m  %t   |   \033[36m󰒖  %l"
+set hiddenfiles .*:lost+found:go:Passwords.kdbx
+set promptfmt "\033[33;1m%d\033"
+set rulerfmt "  %a|  %p|  \033[7;31m %m \033[0m|  \033[7;33m %c \033[0m|  \033[7;35m %s \033[0m|  \033[7;34m %f \033[0m|  %i/%t"
+set truncatechar "…"
+set timefmt "Jan _2 2006  15:04:05"
+set errorfmt "\033[0;31;31m"
+set sixel true
+set cursoractivefmt "\033[7m"
+set cursorparentfmt "\033[7m"
+set cursorpreviewfmt "\033[4m"

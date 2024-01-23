@@ -1,0 +1,42 @@
+#!/bin/bash
+
+
+declare -A app_icons=(
+    ["steam"]="%{F#C7D5E0} %{F-}"
+    ["firefox"]="%{F#FF4400} %{F-}"
+    ["sublime"]="%{F#FFAA00} %{F-}"
+    ["prismlauncher"]="%{F#33FF33}󰍳 %{F-}"
+    ["telegram"]="%{F#00AAFF} %{F-}"
+    ["chromium"]="%{F#669DF6} %{F-}"
+    ["pacman"]="%{F#FFFF00}󰮯 %{F-}"
+    ["mocp"]="%{F#44BBFF} %{F-}"
+    ["python"]="%{F#FFFF00} %{F-}"
+    ["node"]="%{F#44FF44}󰎙 %{F-}"
+    ["quodlibet"]="%{F#AAAAAA}󰽰 %{F-}"
+    ["lf"]="%{F#F6C177} %{F-}"
+    ["wget"]="%{F#77C1F6} %{F-}"
+    ["vlc"]="%{F#FFB100}󰕼 %{F-}"
+    ["gajim"]="%{F#77F6C1}󰟿 %{F-}"
+    ["htop"]="%{F#FF55AA}󰗶 %{F-}"
+    ["Discord"]="%{F#7289DA}󰙯 %{F-}"
+)
+
+
+is_running() {
+    pgrep "$1" > /dev/null
+}
+
+
+get_output() {
+    output=""
+    for app in "${!app_icons[@]}"; do
+        if is_running "$app"; then
+            output+=" ${app_icons[$app]} "
+        fi
+    done
+    echo "$output"
+}
+
+
+get_output
+
