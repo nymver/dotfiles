@@ -1,0 +1,15 @@
+{
+	"color_scheme": "Packages/Colorsublime-Themes/rose-pine.tmTheme",
+	"theme": "auto",
+	"font_face": "Iosevka Nerd Font Mono Bold",
+	"font_size": 10,
+	"caret_extra_width": 0,
+	"caret_style": "blink",
+	"caret_extra_top": 2,
+	"caret_extra_bottom": 2,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": false,
+}

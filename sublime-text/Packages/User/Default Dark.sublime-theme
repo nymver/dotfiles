@@ -1,0 +1,34 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+		"base_hue": "#26233a",
+		"base_tint": "#e0def4",
+		"text_fg": "#e0def4",
+		"icon_button_highlight": "#26233a",
+		"tool_tip_bg": "#1f1d2e",
+		"tool_tip_fg": "#e0def4",
+		"button_bg": "#26233a",
+		"sidebar_bg": "#191724",
+		"sidebar_row_selected": "#26233a",
+		"sidebar_label": "#e0def4",
+		"sidebar_label_selected": "#e0def4",
+		"sidebar_label_ignored": "#908caa",
+		"sidebar_heading": "#191724",
+		"ui_bg": "#191724",
+		"tabset_dark_tint_mod": "#ff0000",
+		"tabset_dark_bg": "#ff0000",
+		"tabset_medium_dark_tint_mod": "#ff0000",
+		"tabset_medium_dark_bg": "#191724",
+		"tabset_medium_tint_mod": "#ff0000",
+		"tabset_medium_bg": "#ff0000",
+		"tabset_light_tint_mod": "#ff0000",
+		"tabset_light_bg": "#ff0000",
+		"overlay_bg": "#191724",
+
+	},
+	"rules":
+	[
+		
+	]
+}
